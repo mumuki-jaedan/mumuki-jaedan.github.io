@@ -1,0 +1,32 @@
+# Quarto
+docs/_site/
+docs/.quarto/
+.quarto/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+
+# Data (sensitive)
+data/
+
+# IDE
+.vscode/
+.Rproj.user/
+*.Rproj
+
+# R
+.Rhistory
+.RData
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Node
+node_modules/

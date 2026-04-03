@@ -1,0 +1,79 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "무무키 파운데이션"
+  description: "다이렉트 기부 솔루션으로 기부자와 수혜자를 잇는 투명한 복지단체"
+  site-url: https://mumuki.net
+  favicon: assets/logo/mumuki-favicon.svg
+
+  navbar:
+    pinned: true
+    logo: assets/logo/mumuki-logo-primary.svg
+    logo-alt: "무무키 파운데이션 로고"
+    left:
+      - text: "재단소개"
+        menu:
+          - text: "설립 취지"
+            href: about/mission.qmd
+          - text: "조직 구성"
+            href: about/organization.qmd
+          - text: "연혁"
+            href: about/history.qmd
+      - text: "사업안내"
+        menu:
+          - text: "도서관 동행"
+            href: programs/library.qmd
+          - text: "직업 교육"
+            href: programs/career.qmd
+          - text: "다이렉트 기부"
+            href: programs/direct-donation.qmd
+      - text: "투명한 운영"
+        menu:
+          - text: "운영 원칙"
+            href: transparency/index.qmd
+          - text: "회계 공시"
+            href: transparency/finance.qmd
+          - text: "감사보고서"
+            href: transparency/audit.qmd
+      - text: "참여하기"
+        menu:
+          - text: "후원 안내"
+            href: participate/donate.qmd
+          - text: "봉사 · 멘토링"
+            href: participate/volunteer.qmd
+          - text: "기관 협력"
+            href: participate/partner.qmd
+      - text: "소식"
+        href: news/index.qmd
+    right:
+      - icon: heart-fill
+        text: "후원하기"
+        href: participate/donate.qmd
+        aria-label: "후원하기"
+
+  search:
+    location: navbar
+    type: overlay
+
+  page-footer:
+    left: |
+      무무키 파운데이션 | (가칭) 무파 준비위
+    center: |
+      [개인정보처리방침](/legal/privacy.qmd) | [이용약관](/legal/terms.qmd)
+    right: |
+      &copy; 2026 무무키 파운데이션
+
+  open-graph: true
+
+format:
+  html:
+    theme:
+      - cosmo
+      - custom.scss
+    lang: ko
+    toc: true
+    toc-depth: 3
+    code-fold: true
+    mainfont: "Noto Sans KR, Pretendard, -apple-system, sans-serif"
