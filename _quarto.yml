@@ -9,6 +9,8 @@ project:
     - "participate/"
     - "news/"
     - "legal/"
+  resources:
+    - CNAME
 
 website:
   title: "무무키 파운데이션"
