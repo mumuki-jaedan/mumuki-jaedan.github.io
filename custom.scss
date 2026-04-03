@@ -1,0 +1,553 @@
+/*-- scss:defaults --*/
+
+// Brand colors
+$deep-teal: #2C5F5C;
+$warm-coral: #E07A5F;
+$sand-gold: #D4A574;
+$charcoal: #2D3436;
+$warm-gray: #636E72;
+$light-gray: #B2BEC3;
+$off-white: #F5F1EB;
+
+// Bootstrap overrides
+$primary: $deep-teal;
+$secondary: $warm-coral;
+$body-bg: $off-white;
+$body-color: $charcoal;
+$font-family-sans-serif: "Noto Sans KR", "Pretendard", -apple-system, sans-serif;
+$headings-font-family: "Noto Serif KR", "Georgia", serif;
+$headings-font-weight: 700;
+$headings-color: $charcoal;
+$link-color: $deep-teal;
+$link-hover-color: darken($deep-teal, 10%);
+
+// Tufte typography (Major Third 1.250)
+$font-size-base: 1rem;
+$line-height-base: 1.7;
+$headings-line-height: 1.3;
+$paragraph-margin-bottom: 1.2rem;
+
+// Navbar
+$navbar-bg: white;
+$navbar-fg: $charcoal;
+
+/*-- scss:rules --*/
+
+// ─── Global ───
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.content {
+  max-width: 65ch;
+}
+
+// ─── Navbar ───
+
+.navbar {
+  border-bottom: 1px solid rgba($light-gray, 0.5);
+  box-shadow: none;
+  padding: 0.75rem 0;
+  backdrop-filter: blur(8px);
+  background: rgba(white, 0.95) !important;
+}
+
+.navbar .navbar-brand {
+  font-family: $headings-font-family;
+  font-weight: 700;
+  color: $deep-teal;
+}
+
+.navbar .nav-link {
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  transition: color 0.2s;
+
+  &:hover {
+    color: $deep-teal !important;
+  }
+}
+
+// ─── Page Layout Overrides ───
+
+.page-layout-custom .content {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.page-layout-custom #quarto-content {
+  padding: 0;
+}
+
+.page-layout-custom .page-columns {
+  padding: 0;
+}
+
+// Hide default title block on custom pages
+.page-layout-custom #title-block-header,
+.page-layout-custom .quarto-title-block {
+  display: none !important;
+}
+
+// Prevent stray ::after from non-heading h2
+.page-layout-custom h2:not(.section-heading)::after {
+  display: none;
+}
+
+// ─── Container ───
+
+.container-narrow {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+// ─── Hero Section ───
+
+.hero-section {
+  background: linear-gradient(170deg, $off-white 0%, darken($off-white, 3%) 100%);
+  border-bottom: 1px solid rgba($light-gray, 0.4);
+  overflow: hidden;
+}
+
+.hero-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 5rem 2rem 4rem;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.hero-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.hero-visual {
+  flex: 0 0 420px;
+
+  p {
+    margin: 0;
+  }
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-title {
+  font-family: $headings-font-family;
+  font-size: 3rem;
+  font-weight: 700;
+  color: $charcoal;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  display: block;
+}
+
+.hero-accent {
+  color: $deep-teal;
+}
+
+.hero-subtitle {
+  display: block;
+  font-size: 1.1rem;
+  color: $warm-gray;
+  line-height: 1.8;
+  max-width: 48ch;
+  margin: 1.5rem 0 2rem;
+}
+
+// ─── Buttons ───
+
+.btn-donate {
+  background-color: $warm-coral;
+  color: white;
+  border: none;
+  padding: 0.8rem 2.2rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 8px rgba($warm-coral, 0.3);
+
+  &:hover {
+    background-color: darken($warm-coral, 8%);
+    color: white;
+    box-shadow: 0 4px 16px rgba($warm-coral, 0.4);
+    transform: translateY(-1px);
+  }
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: $deep-teal;
+  border: 1.5px solid $deep-teal;
+  padding: 0.8rem 2.2rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.25s ease;
+  margin-left: 0.75rem;
+
+  &:hover {
+    background-color: $deep-teal;
+    color: white;
+    transform: translateY(-1px);
+  }
+}
+
+.btn-lg {
+  padding: 1rem 2.8rem;
+  font-size: 1.05rem;
+}
+
+// ─── Section Shared ───
+
+h2.section-heading {
+  font-family: $headings-font-family;
+  font-size: 1.95rem;
+  font-weight: 700;
+  color: $charcoal;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.01em;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 48px;
+    height: 3px;
+    background: $sand-gold;
+    margin: 1rem auto 0;
+    border-radius: 2px;
+  }
+}
+
+// Prevent Quarto section wrapper from duplicating ::after
+section.section-heading::after {
+  display: none !important;
+}
+
+// ─── Programs Section ───
+
+.section-programs {
+  background: white;
+  padding: 5rem 0;
+}
+
+.program-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.program-card {
+  background: $off-white;
+  border: 1px solid rgba($light-gray, 0.5);
+  border-radius: 8px;
+  padding: 2.5rem 2rem;
+  transition: all 0.3s ease;
+  position: relative;
+
+  &:hover {
+    border-color: $deep-teal;
+    box-shadow: 0 8px 24px rgba($charcoal, 0.08);
+    transform: translateY(-3px);
+  }
+
+  h3 {
+    font-family: $headings-font-family;
+    color: $deep-teal;
+    font-size: 1.35rem;
+    margin: 1rem 0 0.75rem;
+    letter-spacing: -0.01em;
+  }
+
+  p {
+    color: $warm-gray;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 1.25rem;
+  }
+}
+
+.card-icon {
+  p {
+    margin: 0;
+    line-height: 0;
+  }
+
+  img {
+    opacity: 0.85;
+  }
+}
+
+.card-link {
+  color: $deep-teal;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.2s;
+
+  &:hover {
+    color: darken($deep-teal, 10%);
+  }
+}
+
+// ─── Transparency Section ───
+
+.section-transparency {
+  background: $off-white;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 3rem 0 2.5rem;
+}
+
+.stat-item {
+  padding: 2rem 1rem;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid rgba($light-gray, 0.4);
+}
+
+.stat-number {
+  font-family: $headings-font-family;
+  font-size: 3rem;
+  font-weight: 700;
+  color: $deep-teal;
+  line-height: 1;
+  display: block;
+}
+
+.stat-number-sm {
+  font-family: $headings-font-family;
+  font-size: 2rem;
+  font-weight: 700;
+  color: $deep-teal;
+  line-height: 1;
+  display: block;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: $warm-gray;
+  margin-top: 0.5rem;
+  display: block;
+}
+
+.transparency-note {
+  font-size: 0.88rem;
+  color: $warm-gray;
+  font-style: italic;
+  border-left: 3px solid $sand-gold;
+  padding: 1rem 1.5rem;
+  margin: 2rem auto;
+  max-width: 700px;
+  text-align: left;
+  background: rgba(white, 0.6);
+  border-radius: 0 6px 6px 0;
+  line-height: 1.7;
+}
+
+// ─── CTA Section ───
+
+.section-cta {
+  background: $deep-teal;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.cta-title {
+  font-family: $headings-font-family;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: white;
+  display: block;
+  letter-spacing: -0.02em;
+}
+
+.cta-subtitle {
+  font-size: 1.1rem;
+  color: rgba(white, 0.75);
+  display: block;
+  margin: 0.75rem 0 2.5rem;
+}
+
+.section-cta .btn-donate {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.section-cta .btn-outline {
+  color: white;
+  border-color: rgba(white, 0.5);
+
+  &:hover {
+    background: white;
+    color: $deep-teal;
+    border-color: white;
+  }
+}
+
+// ─── Tufte Elements ───
+
+hr {
+  border: none;
+  border-top: 1px solid rgba($light-gray, 0.5);
+  margin: 2rem 0;
+}
+
+.sidenote {
+  font-size: 0.85rem;
+  color: $warm-gray;
+  font-style: italic;
+  border-left: 2px solid $sand-gold;
+  padding-left: 1rem;
+  margin: 1rem 0;
+}
+
+// ─── Key Value ───
+
+.key-value {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid lighten($light-gray, 5%);
+
+  .key {
+    color: $warm-gray;
+  }
+  .value {
+    font-weight: 600;
+    color: $charcoal;
+  }
+}
+
+// ─── Footer ───
+
+.nav-footer {
+  border-top: 1px solid rgba($light-gray, 0.4);
+  background-color: white;
+  font-size: 0.85rem;
+  color: $warm-gray;
+  padding: 1.5rem 0;
+}
+
+// ─── SVG Illustration ───
+
+.illustration {
+  text-align: center;
+  margin: 2rem 0;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+// ─── Content Pages ───
+
+.quarto-title {
+  margin-bottom: 2rem;
+
+  .title {
+    font-size: 2.4rem;
+    letter-spacing: -0.02em;
+  }
+
+  .description {
+    font-size: 1.1rem;
+    color: $warm-gray;
+    margin-top: 0.5rem;
+  }
+}
+
+// ─── Responsive ───
+
+@media (max-width: 992px) {
+  .hero-inner {
+    flex-direction: column;
+    padding: 3rem 2rem;
+    gap: 2.5rem;
+  }
+
+  .hero-visual {
+    flex: none;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .hero-title {
+    font-size: 2.4rem;
+  }
+
+  .program-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-inner {
+    padding: 2rem 1.25rem;
+  }
+
+  .hero-title {
+    font-size: 1.9rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .container-narrow {
+    padding: 0 1.25rem;
+  }
+
+  .section-programs,
+  .section-transparency,
+  .section-cta {
+    padding: 3.5rem 0;
+  }
+
+  .btn-donate,
+  .btn-outline {
+    display: block;
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+
+  .btn-outline {
+    margin-left: 0;
+  }
+
+  .cta-title {
+    font-size: 1.7rem;
+  }
+}

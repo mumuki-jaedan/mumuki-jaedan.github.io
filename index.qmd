@@ -2,99 +2,120 @@
 title: "무무키 파운데이션"
 description: "다이렉트 기부 솔루션으로 기부자와 수혜자를 잇는 투명한 복지단체"
 toc: false
-page-layout: full
+page-layout: custom
+title-block-style: none
 ---
 
-:::::: {.hero-section}
-::::: {.container}
-:::: {.grid}
+::: {.hero-section}
+::: {.hero-inner}
+::: {.hero-content}
 
-::: {.g-col-12 .g-col-md-6}
-
-[기부의 새로운 길,]{.hero-title} \
-[직접 연결합니다]{.hero-title .hero-title-accent}
-
-<hr>
+[기부의 새로운 길,]{.hero-title}[직접 연결합니다]{.hero-title .hero-accent}
 
 [무무키 파운데이션은 공공 복지의 사각지대를 발굴하여, 기부자와 수혜자의 **수평적 관계** 속에서 지속가능한 후원 모델을 만들어갑니다. 모든 회계 내역은 **100% 공개**합니다.]{.hero-subtitle}
 
-<br>
-
-[후원하기](participate/donate.qmd){.btn-donate} &nbsp;&nbsp;
+[후원하기](participate/donate.qmd){.btn-donate}
 [더 알아보기](about/mission.qmd){.btn-outline}
 
 :::
 
-::: {.g-col-12 .g-col-md-6}
-![](images/hero/hero-banner.svg){fig-alt="기부자와 수혜자를 직접 연결하는 다이렉트 기부 솔루션 개념도"}
+::: {.hero-visual}
+![](images/hero/hero-banner.svg){fig-alt="기부자와 수혜자를 직접 연결하는 다이렉트 기부 솔루션 개념도" .hero-image}
 :::
 
-::::
-:::::
-::::::
+:::
+:::
 
-<br>
+::: {.section-programs}
+::: {.container-narrow}
 
-## 무무키가 하는 일 {.text-center}
+## 무무키가 하는 일 {.section-heading}
 
-:::: {.feature-grid}
+::: {.program-grid}
 
 ::: {.program-card}
+::: {.card-icon}
+![](images/icons/icon-book.svg){fig-alt="도서관 아이콘" width="48"}
+:::
+
 ### 도서관 동행
 
 월 1회 주말, 지역 독지가와 시설 학생들이 함께 도서관을 방문합니다. 자율 학습 후 저녁 식사를 함께하며 세계관을 넓혀갑니다.
 
-[자세히 보기 →](programs/library.qmd)
+[자세히 보기 →](programs/library.qmd){.card-link}
 :::
 
 ::: {.program-card}
+::: {.card-icon}
+![](images/icons/icon-building.svg){fig-alt="직업 교육 아이콘" width="48"}
+:::
+
 ### 직업 교육
 
 전문직·C-Level 멘토가 직장을 개방합니다. 학생들은 다양한 직업을 직접 체험하고, 꿈과 희망을 키워갑니다.
 
-[자세히 보기 →](programs/career.qmd)
+[자세히 보기 →](programs/career.qmd){.card-link}
 :::
 
 ::: {.program-card}
+::: {.card-icon}
+![](images/icons/icon-heart.svg){fig-alt="기부 아이콘" width="48"}
+:::
+
 ### 다이렉트 기부
 
 기부금이 수혜자에게 직접 전달됩니다. 가상계좌 매칭으로 입금부터 지출까지 모든 내역을 추적할 수 있습니다.
 
-[자세히 보기 →](programs/direct-donation.qmd)
+[자세히 보기 →](programs/direct-donation.qmd){.card-link}
 :::
 
-::::
+:::
 
-<br>
+:::
+:::
 
-## 투명한 운영 {.text-center}
+::: {.section-transparency}
+::: {.container-narrow}
 
-:::: {.grid}
+## 투명한 운영 {.section-heading}
 
-::: {.g-col-12 .g-col-md-4 .text-center}
+::: {.stats-grid}
+
+::: {.stat-item}
 [100%]{.stat-number}
-
 [회계 내역 공개]{.stat-label}
 :::
 
-::: {.g-col-12 .g-col-md-4 .text-center}
+::: {.stat-item}
 [별도 조달]{.stat-number-sm}
-
 [운영비는 기부금과 분리]{.stat-label}
 :::
 
-::: {.g-col-12 .g-col-md-4 .text-center}
+::: {.stat-item}
 [매년]{.stat-number-sm}
-
 [외부 회계감사 공개]{.stat-label}
 :::
 
-::::
+:::
 
-::: {.sidenote}
+::: {.transparency-note}
 무파 명의 계좌·카드 내역은 홈페이지에 전체 공개합니다. 기부자·수혜자명은 비식별화 처리합니다. 운영비(일반관리비·모금비)는 사업수행비와 별도로 조달하여, 기부금 전액이 수혜자에게 전달되도록 합니다. — *Charity Water 모델 준용*
 :::
 
-<br>
-
 [투명한 운영 자세히 보기 →](transparency/index.qmd){.btn-outline}
+
+:::
+:::
+
+::: {.section-cta}
+::: {.container-narrow}
+
+[함께 만드는 변화]{.cta-title}
+
+[작은 관심이 한 아이의 세계를 바꿉니다.]{.cta-subtitle}
+
+[후원하기](participate/donate.qmd){.btn-donate .btn-lg}
+[봉사·멘토링 참여](participate/volunteer.qmd){.btn-outline .btn-lg}
+
+:::
+:::

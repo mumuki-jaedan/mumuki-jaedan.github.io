@@ -1,6 +1,14 @@
 project:
   type: website
-  output-dir: _site
+  output-dir: docs
+  render:
+    - "*.qmd"
+    - "about/"
+    - "programs/"
+    - "transparency/"
+    - "participate/"
+    - "news/"
+    - "legal/"
 
 website:
   title: "무무키 파운데이션"
@@ -77,3 +85,8 @@ format:
     toc-depth: 3
     code-fold: true
     mainfont: "Noto Sans KR, Pretendard, -apple-system, sans-serif"
+    include-in-header:
+      text: |
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Noto+Serif+KR:wght@400;700&display=swap" rel="stylesheet">

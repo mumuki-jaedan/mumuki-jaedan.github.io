@@ -9,7 +9,8 @@
 ```
 Phase 1: ██████████ 100%  프로젝트 초기화
 Phase 2: ██████████ 100%  기본 구조 구축
-Phase 3: ████████░░  80%  핵심 콘텐츠 개발
+Phase 3: ██████████ 100%  핵심 콘텐츠 개발
+Phase 3.5: ██████████ 100%  구조 리팩토링 & 디자인 개선
 Phase 4: ░░░░░░░░░░   0%  배포 & 도메인
 Phase 5: ░░░░░░░░░░   0%  QA & 런칭
 Phase 6: ░░░░░░░░░░   0%  운영 & 확장
@@ -18,6 +19,29 @@ Phase 6: ░░░░░░░░░░   0%  운영 & 확장
 ---
 
 ## 상세 진행 기록
+
+### 2026-04-03 — Session 3: 프로젝트 구조 리팩토링 및 디자인 개선
+
+**사이클**: Review → Evaluate → Execute → Review (2회 반복)
+
+| 단계 | 작업 | 결과 |
+|------|------|------|
+| REVIEW | 빌드 출력, 코드 품질, 디자인 시스템 검토 | 5건 이슈 발견 |
+| EVALUATE | 설립안 부합성·기술 적합성·UX 평가 | 종합 3.7/5 |
+| EXECUTE | 프로젝트 구조 리팩토링 (docs/ → root) | 소스/출력 분리 |
+| EXECUTE | output-dir: docs, render 필드 추가 | 빌드 설정 정리 |
+| EXECUTE | index.qmd fenced div 전면 재작성 | `:::` 텍스트 노출 해결 |
+| EXECUTE | custom.scss 대폭 개선 | Hero, 카드, 통계, CTA 섹션 |
+| EXECUTE | Google Fonts 웹폰트 로드 추가 | Noto Serif/Sans KR |
+| EXECUTE | Quarto 타이틀 블록 중복 제거 | CSS + title-block-style |
+| EXECUTE | section ::after gold bar 중복 수정 | 정밀 CSS 셀렉터 |
+| REVIEW | 크롬에서 시각적 확인 (3회 반복) | 모든 이슈 해결 |
+
+**수정 후 평가**: 종합 3.7/5 → **4.5/5**
+
+**기술문서**: `tech_document/20260403_프로젝트구조_리팩토링_및_디자인개선.md`
+
+---
 
 ### 2026-04-03 — Session 2: 웹사이트 초기 구축
 

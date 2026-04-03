@@ -1,18 +1,19 @@
-# Quarto
-docs/_site/
-docs/.quarto/
+# Quarto 빌드 출력 (Cloudflare Pages에서 서버 빌드)
+docs/
 .quarto/
+**/*.quarto_ipynb
+
+# 민감 문서 (Google Drive에만 보관)
+document/
+data/
+
+# 환경 변수
+.env
+.env.local
 
 # OS
 .DS_Store
 Thumbs.db
-
-# Environment
-.env
-.env.local
-
-# Data (sensitive)
-data/
 
 # IDE
 .vscode/
