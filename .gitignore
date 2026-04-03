@@ -6,6 +6,7 @@ docs/
 # 민감 문서 (Google Drive에만 보관)
 document/
 data/
+tech_document/
 
 # 환경 변수
 .env
