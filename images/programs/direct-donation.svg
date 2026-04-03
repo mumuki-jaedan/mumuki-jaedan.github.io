@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="600" height="360">
+  <defs>
+    <style>
+      .t-title { font-family: 'Georgia', 'Noto Serif KR', serif; font-weight: 700; }
+      .t-body { font-family: 'Helvetica Neue', 'Noto Sans KR', sans-serif; }
+      .t-label { font-family: 'Helvetica Neue', 'Noto Sans KR', sans-serif; font-size: 10px; }
+      .t-mono { font-family: 'Courier', monospace; font-size: 9px; }
+    </style>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M 0 0 L 8 3 L 0 6" fill="none" stroke="#2C5F5C" stroke-width="0.8"/>
+    </marker>
+    <marker id="arr-coral" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M 0 0 L 8 3 L 0 6" fill="none" stroke="#E07A5F" stroke-width="0.8"/>
+    </marker>
+  </defs>
+
+  <rect width="600" height="360" fill="#F5F1EB"/>
+
+  <text x="40" y="36" class="t-title" font-size="20" fill="#2D3436">다이렉트 기부 솔루션 구조</text>
+  <line x1="40" y1="46" x2="560" y2="46" stroke="#B2BEC3" stroke-width="0.5"/>
+
+  <!-- Three columns: Donor / Mumuki / Beneficiary -->
+
+  <!-- Column 1: Donor -->
+  <g transform="translate(80, 80)">
+    <rect x="-40" y="-10" width="100" height="120" rx="4" fill="none" stroke="#2C5F5C" stroke-width="1" stroke-dasharray="4,3"/>
+    <circle cx="10" cy="16" r="12" fill="none" stroke="#2C5F5C" stroke-width="1.2"/>
+    <line x1="10" y1="28" x2="10" y2="54" stroke="#2C5F5C" stroke-width="1.2"/>
+    <text x="10" y="76" text-anchor="middle" class="t-body" font-size="13" fill="#2C5F5C" font-weight="600">기부자</text>
+    <text x="10" y="92" text-anchor="middle" class="t-label" fill="#636E72">가상계좌 발급</text>
+    <text x="10" y="104" text-anchor="middle" class="t-label" fill="#636E72">기부금 입금</text>
+  </g>
+
+  <!-- Column 2: Mumuki Foundation (center) -->
+  <g transform="translate(260, 70)">
+    <rect x="-60" y="0" width="140" height="200" rx="4" fill="#2C5F5C" fill-opacity="0.06" stroke="#2C5F5C" stroke-width="1"/>
+    <text x="10" y="24" text-anchor="middle" class="t-body" font-size="13" fill="#2C5F5C" font-weight="700">무무키 파운데이션</text>
+    <line x1="-40" y1="34" x2="60" y2="34" stroke="#2C5F5C" stroke-width="0.5"/>
+
+    <!-- Internal process steps -->
+    <text x="10" y="56" text-anchor="middle" class="t-label" fill="#2D3436" font-weight="600">1. 기부금 수령</text>
+    <text x="10" y="80" text-anchor="middle" class="t-label" fill="#2D3436" font-weight="600">2. 매칭 확인</text>
+    <text x="10" y="104" text-anchor="middle" class="t-label" fill="#2D3436" font-weight="600">3. 지출 실행</text>
+    <text x="10" y="128" text-anchor="middle" class="t-label" fill="#2D3436" font-weight="600">4. 내역 공개</text>
+
+    <!-- Small arrows between steps -->
+    <line x1="10" y1="60" x2="10" y2="68" stroke="#B2BEC3" stroke-width="0.5"/>
+    <line x1="10" y1="84" x2="10" y2="92" stroke="#B2BEC3" stroke-width="0.5"/>
+    <line x1="10" y1="108" x2="10" y2="116" stroke="#B2BEC3" stroke-width="0.5"/>
+
+    <!-- Transparency badge -->
+    <rect x="-36" y="144" width="92" height="36" rx="3" fill="none" stroke="#D4A574" stroke-width="0.8"/>
+    <text x="10" y="162" text-anchor="middle" class="t-label" fill="#D4A574" font-weight="600">100% 회계 공개</text>
+    <text x="10" y="174" text-anchor="middle" class="t-mono" fill="#D4A574">mumuki.net</text>
+  </g>
+
+  <!-- Column 3: Beneficiary -->
+  <g transform="translate(460, 80)">
+    <rect x="-40" y="-10" width="100" height="120" rx="4" fill="none" stroke="#E07A5F" stroke-width="1" stroke-dasharray="4,3"/>
+    <circle cx="10" cy="16" r="12" fill="none" stroke="#E07A5F" stroke-width="1.2"/>
+    <line x1="10" y1="28" x2="10" y2="54" stroke="#E07A5F" stroke-width="1.2"/>
+    <text x="10" y="76" text-anchor="middle" class="t-body" font-size="13" fill="#E07A5F" font-weight="600">수혜자</text>
+    <text x="10" y="92" text-anchor="middle" class="t-label" fill="#636E72">직접 전달</text>
+    <text x="10" y="104" text-anchor="middle" class="t-label" fill="#636E72">사업수행비</text>
+  </g>
+
+  <!-- Arrows: Donor → Mumuki -->
+  <line x1="145" y1="140" x2="195" y2="140" stroke="#2C5F5C" stroke-width="1.2" marker-end="url(#arr)"/>
+  <text x="170" y="132" text-anchor="middle" class="t-label" fill="#2C5F5C">기부금</text>
+
+  <!-- Arrows: Mumuki → Beneficiary -->
+  <line x1="345" y1="140" x2="410" y2="140" stroke="#E07A5F" stroke-width="1.2" marker-end="url(#arr-coral)"/>
+  <text x="378" y="132" text-anchor="middle" class="t-label" fill="#E07A5F">지원</text>
+
+  <!-- Feedback arrow: Mumuki → Donor (notification) -->
+  <path d="M 260 280 Q 180 310, 100 280" stroke="#D4A574" stroke-width="1" fill="none" stroke-dasharray="3,3" marker-end="url(#arr)"/>
+  <text x="180" y="306" text-anchor="middle" class="t-label" fill="#D4A574">매칭 지출 내역 알림</text>
+
+  <!-- Bottom note -->
+  <line x1="40" y1="330" x2="560" y2="330" stroke="#B2BEC3" stroke-width="0.5"/>
+  <text x="40" y="350" class="t-label" fill="#636E72" font-style="italic">* 사업수행비 외 공익목적사업비(일반관리비, 모금비)는 별도 모금으로 해결 &#x2014; Charity Water 모델 준용</text>
+</svg>

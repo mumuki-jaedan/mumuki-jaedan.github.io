@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" width="600" height="300">
+  <defs>
+    <style>
+      .t-title { font-family: 'Georgia', 'Noto Serif KR', serif; font-weight: 700; }
+      .t-body { font-family: 'Helvetica Neue', 'Noto Sans KR', sans-serif; }
+      .t-label { font-family: 'Helvetica Neue', 'Noto Sans KR', sans-serif; font-size: 10px; }
+    </style>
+  </defs>
+
+  <rect width="600" height="300" fill="#F5F1EB"/>
+
+  <text x="300" y="36" text-anchor="middle" class="t-title" font-size="20" fill="#2D3436">참여 방법</text>
+  <line x1="60" y1="46" x2="540" y2="46" stroke="#B2BEC3" stroke-width="0.5"/>
+
+  <!-- Three cards side by side -->
+
+  <!-- Card 1: Financial Donation -->
+  <g transform="translate(100, 80)">
+    <rect x="-60" y="0" width="120" height="150" rx="4" fill="#FFFFFF" stroke="#2C5F5C" stroke-width="1"/>
+
+    <!-- Heart icon -->
+    <path d="M 0 28 C -4 18, -18 18, -18 30 C -18 42, 0 54, 0 54 C 0 54, 18 42, 18 30 C 18 18, 4 18, 0 28Z"
+          fill="none" stroke="#E07A5F" stroke-width="1.2"/>
+
+    <text x="0" y="78" text-anchor="middle" class="t-body" font-size="13" fill="#2D3436" font-weight="600">후원하기</text>
+    <line x1="-30" y1="86" x2="30" y2="86" stroke="#D4A574" stroke-width="0.5"/>
+    <text x="0" y="104" text-anchor="middle" class="t-label" fill="#636E72">계좌이체</text>
+    <text x="0" y="118" text-anchor="middle" class="t-label" fill="#636E72">토스 간편송금</text>
+    <text x="0" y="132" text-anchor="middle" class="t-label" fill="#636E72">카카오페이</text>
+  </g>
+
+  <!-- Card 2: Volunteer -->
+  <g transform="translate(300, 80)">
+    <rect x="-60" y="0" width="120" height="150" rx="4" fill="#FFFFFF" stroke="#2C5F5C" stroke-width="1"/>
+
+    <!-- People icon -->
+    <circle cx="-8" cy="22" r="7" fill="none" stroke="#2C5F5C" stroke-width="1"/>
+    <line x1="-8" y1="29" x2="-8" y2="44" stroke="#2C5F5C" stroke-width="1"/>
+    <circle cx="8" cy="22" r="7" fill="none" stroke="#D4A574" stroke-width="1"/>
+    <line x1="8" y1="29" x2="8" y2="44" stroke="#D4A574" stroke-width="1"/>
+
+    <text x="0" y="78" text-anchor="middle" class="t-body" font-size="13" fill="#2D3436" font-weight="600">봉사/멘토링</text>
+    <line x1="-30" y1="86" x2="30" y2="86" stroke="#D4A574" stroke-width="0.5"/>
+    <text x="0" y="104" text-anchor="middle" class="t-label" fill="#636E72">도서관 동행</text>
+    <text x="0" y="118" text-anchor="middle" class="t-label" fill="#636E72">직업 소개 멘토</text>
+    <text x="0" y="132" text-anchor="middle" class="t-label" fill="#636E72">대학생/시니어 참여</text>
+  </g>
+
+  <!-- Card 3: Partnership -->
+  <g transform="translate(500, 80)">
+    <rect x="-60" y="0" width="120" height="150" rx="4" fill="#FFFFFF" stroke="#2C5F5C" stroke-width="1"/>
+
+    <!-- Handshake icon -->
+    <path d="M -14 36 L -4 26 L 4 32 L 14 24" fill="none" stroke="#2C5F5C" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M -14 24 L -4 32 L 4 26 L 14 36" fill="none" stroke="#D4A574" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <text x="0" y="78" text-anchor="middle" class="t-body" font-size="13" fill="#2D3436" font-weight="600">기관 협력</text>
+    <line x1="-30" y1="86" x2="30" y2="86" stroke="#D4A574" stroke-width="0.5"/>
+    <text x="0" y="104" text-anchor="middle" class="t-label" fill="#636E72">복지단체 섭외</text>
+    <text x="0" y="118" text-anchor="middle" class="t-label" fill="#636E72">학교 연계</text>
+    <text x="0" y="132" text-anchor="middle" class="t-label" fill="#636E72">기업 CSR 협력</text>
+  </g>
+
+  <!-- Bottom CTA note -->
+  <line x1="60" y1="258" x2="540" y2="258" stroke="#B2BEC3" stroke-width="0.5"/>
+  <text x="300" y="280" text-anchor="middle" class="t-body" font-size="12" fill="#636E72" font-style="italic">모든 참여와 후원은 mumuki.net에서 100% 투명하게 공개됩니다</text>
+</svg>

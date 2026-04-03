@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360">
+  <defs>
+    <style>
+      .t-title { font-family: 'Georgia', 'Noto Serif KR', serif; font-weight: 700; }
+      .t-body { font-family: 'Helvetica Neue', 'Noto Sans KR', sans-serif; }
+      .t-label { font-family: 'Helvetica Neue', 'Noto Sans KR', sans-serif; font-size: 10px; }
+    </style>
+    <marker id="af" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+      <path d="M 0 0 L 7 2.5 L 0 5" fill="none" stroke="#2C5F5C" stroke-width="0.7"/>
+    </marker>
+  </defs>
+
+  <rect width="640" height="360" fill="#F5F1EB"/>
+
+  <text x="40" y="36" class="t-title" font-size="20" fill="#2D3436">다이렉트 기부 솔루션 정보 흐름</text>
+  <text x="40" y="54" class="t-body" font-size="11" fill="#636E72" font-style="italic">설립안 그림1 기반 &#x2014; 참여자 간 정보 흐름 구조</text>
+  <line x1="40" y1="62" x2="600" y2="62" stroke="#B2BEC3" stroke-width="0.5"/>
+
+  <!-- Four actors in a diamond/square layout -->
+
+  <!-- Top: Mumuki Foundation -->
+  <g transform="translate(300, 110)">
+    <rect x="-70" y="-26" width="140" height="52" rx="4" fill="#2C5F5C" fill-opacity="0.08" stroke="#2C5F5C" stroke-width="1.2"/>
+    <text x="0" y="-4" text-anchor="middle" class="t-body" font-size="13" fill="#2C5F5C" font-weight="700">무무키 파운데이션</text>
+    <text x="0" y="14" text-anchor="middle" class="t-label" fill="#636E72">중개 · 매칭 · 공시</text>
+  </g>
+
+  <!-- Left: Donor -->
+  <g transform="translate(100, 220)">
+    <rect x="-50" y="-22" width="100" height="44" rx="4" fill="none" stroke="#2C5F5C" stroke-width="1"/>
+    <text x="0" y="-2" text-anchor="middle" class="t-body" font-size="13" fill="#2C5F5C" font-weight="600">기부자</text>
+    <text x="0" y="14" text-anchor="middle" class="t-label" fill="#636E72">후원금 · 재능</text>
+  </g>
+
+  <!-- Right: Beneficiary / Welfare org -->
+  <g transform="translate(500, 220)">
+    <rect x="-60" y="-22" width="120" height="44" rx="4" fill="none" stroke="#E07A5F" stroke-width="1"/>
+    <text x="0" y="-2" text-anchor="middle" class="t-body" font-size="13" fill="#E07A5F" font-weight="600">복지단체 / 수혜자</text>
+    <text x="0" y="14" text-anchor="middle" class="t-label" fill="#636E72">수요 · 피드백</text>
+  </g>
+
+  <!-- Bottom: Website (mumuki.net) -->
+  <g transform="translate(300, 310)">
+    <rect x="-60" y="-18" width="120" height="36" rx="4" fill="#D4A574" fill-opacity="0.12" stroke="#D4A574" stroke-width="1"/>
+    <text x="0" y="2" text-anchor="middle" class="t-body" font-size="12" fill="#D4A574" font-weight="600">mumuki.net</text>
+    <text x="0" y="14" text-anchor="middle" class="t-label" fill="#636E72">공개 플랫폼</text>
+  </g>
+
+  <!-- Arrows: Foundation ↔ Donor -->
+  <!-- Down-left: Foundation → Donor (matching info) -->
+  <line x1="240" y1="130" x2="140" y2="198" stroke="#2C5F5C" stroke-width="0.8" marker-end="url(#af)"/>
+  <text x="172" y="158" class="t-label" fill="#2C5F5C" transform="rotate(-33 172 158)">매칭 알림</text>
+
+  <!-- Up-right: Donor → Foundation (donation) -->
+  <line x1="140" y1="198" x2="240" y2="130" stroke="#D4A574" stroke-width="0.8" stroke-dasharray="4,3"/>
+  <text x="210" y="178" class="t-label" fill="#D4A574" transform="rotate(-33 210 178)">기부금</text>
+
+  <!-- Arrows: Foundation ↔ Beneficiary -->
+  <!-- Down-right: Foundation → Beneficiary (support) -->
+  <line x1="360" y1="130" x2="452" y2="198" stroke="#E07A5F" stroke-width="0.8" marker-end="url(#af)"/>
+  <text x="420" y="156" class="t-label" fill="#E07A5F" transform="rotate(33 420 156)">지원 · 전달</text>
+
+  <!-- Up-left: Beneficiary → Foundation (needs) -->
+  <line x1="452" y1="198" x2="360" y2="130" stroke="#B2BEC3" stroke-width="0.8" stroke-dasharray="4,3"/>
+  <text x="388" y="176" class="t-label" fill="#636E72" transform="rotate(33 388 176)">수요 신청</text>
+
+  <!-- Arrows: Foundation → Website -->
+  <line x1="300" y1="136" x2="300" y2="288" stroke="#D4A574" stroke-width="0.8" stroke-dasharray="4,3" marker-end="url(#af)"/>
+  <text x="310" y="218" class="t-label" fill="#D4A574">회계 공시</text>
+
+  <!-- Donor ↔ Beneficiary (direct, through platform) -->
+  <path d="M 150 230 Q 300 270, 440 230" stroke="#D4A574" stroke-width="1.2" fill="none" stroke-dasharray="6,3"/>
+  <text x="300" y="266" text-anchor="middle" class="t-label" fill="#D4A574" font-weight="600">수평적 관계 (다이렉트)</text>
+
+  <!-- Legend -->
+  <g transform="translate(40, 340)">
+    <line x1="0" y1="0" x2="20" y2="0" stroke="#2C5F5C" stroke-width="1"/>
+    <text x="26" y="4" class="t-label" fill="#636E72">정보 전달</text>
+    <line x1="100" y1="0" x2="120" y2="0" stroke="#D4A574" stroke-width="1" stroke-dasharray="4,3"/>
+    <text x="126" y="4" class="t-label" fill="#636E72">기부금/공시</text>
+    <line x1="200" y1="0" x2="220" y2="0" stroke="#D4A574" stroke-width="1.2" stroke-dasharray="6,3"/>
+    <text x="226" y="4" class="t-label" fill="#636E72">다이렉트 연결</text>
+  </g>
+</svg>

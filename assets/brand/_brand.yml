@@ -1,0 +1,42 @@
+meta:
+  name: 무무키 파운데이션
+  link: https://mumuki.net
+
+color:
+  palette:
+    deep-teal: "#2C5F5C"
+    warm-coral: "#E07A5F"
+    sand-gold: "#D4A574"
+    charcoal: "#2D3436"
+    warm-gray: "#636E72"
+    light-gray: "#B2BEC3"
+    off-white: "#F5F1EB"
+  foreground: "#2D3436"
+  background: "#F5F1EB"
+  primary: "#2C5F5C"
+  secondary: "#E07A5F"
+  tertiary: "#D4A574"
+  success: "#27AE60"
+  info: "#2980B9"
+  warning: "#F39C12"
+  danger: "#C0392B"
+
+typography:
+  base:
+    family: "Noto Sans KR, Pretendard, -apple-system, sans-serif"
+    size: 1rem
+    line-height: 1.7
+  headings:
+    family: "Noto Serif KR, Georgia, serif"
+    weight: 700
+    line-height: 1.2
+  monospace:
+    family: "JetBrains Mono, D2Coding, monospace"
+
+logo:
+  images:
+    light: assets/logo/mumuki-logo-primary.svg
+    dark: assets/logo/mumuki-logo-white.svg
+  small:
+    light: assets/logo/mumuki-logo-icon.svg
+    dark: assets/logo/mumuki-favicon.svg

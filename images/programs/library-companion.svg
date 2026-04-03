@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <style>
+      .t-title { font-family: 'Georgia', 'Noto Serif KR', serif; font-weight: 700; }
+      .t-body { font-family: 'Helvetica Neue', 'Noto Sans KR', sans-serif; }
+      .t-label { font-family: 'Helvetica Neue', 'Noto Sans KR', sans-serif; font-size: 10px; }
+    </style>
+  </defs>
+
+  <rect width="600" height="400" fill="#F5F1EB"/>
+
+  <!-- Title -->
+  <text x="40" y="36" class="t-title" font-size="20" fill="#2D3436">도서관 동행 및 식사</text>
+  <line x1="40" y1="46" x2="560" y2="46" stroke="#B2BEC3" stroke-width="0.5"/>
+
+  <!-- Timeline flow (horizontal, Tufte-minimal) -->
+  <!-- Step 1: Meeting -->
+  <g transform="translate(60, 80)">
+    <circle cx="0" cy="40" r="20" fill="none" stroke="#2C5F5C" stroke-width="1.2"/>
+    <text x="0" y="44" text-anchor="middle" class="t-body" font-size="18" fill="#2C5F5C">1</text>
+    <text x="0" y="80" text-anchor="middle" class="t-body" font-size="12" fill="#2D3436" font-weight="600">모임</text>
+    <text x="0" y="96" text-anchor="middle" class="t-label" fill="#636E72">주말 14:00</text>
+
+    <!-- Person icons below -->
+    <g transform="translate(-20, 110)">
+      <!-- Adult (volunteer) -->
+      <circle cx="10" cy="8" r="5" fill="none" stroke="#2C5F5C" stroke-width="1"/>
+      <line x1="10" y1="13" x2="10" y2="30" stroke="#2C5F5C" stroke-width="1"/>
+      <text x="10" y="42" text-anchor="middle" class="t-label" fill="#636E72">후원자</text>
+    </g>
+    <g transform="translate(10, 116)">
+      <!-- Student -->
+      <circle cx="10" cy="8" r="4" fill="none" stroke="#E07A5F" stroke-width="1"/>
+      <line x1="10" y1="12" x2="10" y2="26" stroke="#E07A5F" stroke-width="1"/>
+      <text x="10" y="36" text-anchor="middle" class="t-label" fill="#636E72">학생</text>
+    </g>
+  </g>
+
+  <!-- Arrow -->
+  <line x1="100" y1="120" x2="170" y2="120" stroke="#B2BEC3" stroke-width="1" marker-end="url(#arrow)"/>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M 0 0 L 8 3 L 0 6" fill="none" stroke="#B2BEC3" stroke-width="0.8"/>
+    </marker>
+  </defs>
+
+  <!-- Step 2: Library -->
+  <g transform="translate(210, 80)">
+    <circle cx="0" cy="40" r="20" fill="none" stroke="#2C5F5C" stroke-width="1.2"/>
+    <text x="0" y="44" text-anchor="middle" class="t-body" font-size="18" fill="#2C5F5C">2</text>
+    <text x="0" y="80" text-anchor="middle" class="t-body" font-size="12" fill="#2D3436" font-weight="600">도서관</text>
+    <text x="0" y="96" text-anchor="middle" class="t-label" fill="#636E72">14:00~17:00</text>
+
+    <!-- Books icon -->
+    <g transform="translate(-18, 110)">
+      <rect x="0" y="0" width="10" height="30" rx="1" fill="none" stroke="#2C5F5C" stroke-width="0.8"/>
+      <rect x="12" y="4" width="10" height="26" rx="1" fill="none" stroke="#D4A574" stroke-width="0.8"/>
+      <rect x="24" y="2" width="10" height="28" rx="1" fill="none" stroke="#E07A5F" stroke-width="0.8"/>
+    </g>
+    <text x="0" y="156" text-anchor="middle" class="t-label" fill="#636E72">자율 학습</text>
+  </g>
+
+  <!-- Arrow -->
+  <line x1="250" y1="120" x2="320" y2="120" stroke="#B2BEC3" stroke-width="1" marker-end="url(#arrow)"/>
+
+  <!-- Step 3: Dinner -->
+  <g transform="translate(360, 80)">
+    <circle cx="0" cy="40" r="20" fill="none" stroke="#2C5F5C" stroke-width="1.2"/>
+    <text x="0" y="44" text-anchor="middle" class="t-body" font-size="18" fill="#2C5F5C">3</text>
+    <text x="0" y="80" text-anchor="middle" class="t-body" font-size="12" fill="#2D3436" font-weight="600">저녁 식사</text>
+    <text x="0" y="96" text-anchor="middle" class="t-label" fill="#636E72">17:00~</text>
+
+    <!-- Plate/utensil icon -->
+    <g transform="translate(-12, 115)">
+      <circle cx="12" cy="12" r="10" fill="none" stroke="#D4A574" stroke-width="0.8"/>
+      <line x1="-4" y1="12" x2="-4" y2="0" stroke="#636E72" stroke-width="0.8" stroke-linecap="round"/>
+      <line x1="28" y1="12" x2="28" y2="0" stroke="#636E72" stroke-width="0.8" stroke-linecap="round"/>
+    </g>
+    <text x="0" y="156" text-anchor="middle" class="t-label" fill="#636E72">대화 &amp; 교류</text>
+  </g>
+
+  <!-- Arrow -->
+  <line x1="400" y1="120" x2="470" y2="120" stroke="#B2BEC3" stroke-width="1" marker-end="url(#arrow)"/>
+
+  <!-- Step 4: Growth -->
+  <g transform="translate(510, 80)">
+    <circle cx="0" cy="40" r="20" fill="none" stroke="#E07A5F" stroke-width="1.2"/>
+    <text x="0" y="44" text-anchor="middle" class="t-body" font-size="18" fill="#E07A5F">4</text>
+    <text x="0" y="80" text-anchor="middle" class="t-body" font-size="12" fill="#2D3436" font-weight="600">성장</text>
+    <text x="0" y="96" text-anchor="middle" class="t-label" fill="#636E72">지속 참여</text>
+
+    <!-- Growth arrow -->
+    <g transform="translate(-8, 110)">
+      <polyline points="0,28 8,16 16,20 24,4" fill="none" stroke="#27AE60" stroke-width="1.2"/>
+      <circle cx="24" cy="4" r="2" fill="#27AE60"/>
+    </g>
+    <text x="0" y="156" text-anchor="middle" class="t-label" fill="#636E72">노트북 등 지원</text>
+  </g>
+
+  <!-- Bottom section: Key principles (Tufte sidenote style) -->
+  <line x1="40" y1="280" x2="560" y2="280" stroke="#B2BEC3" stroke-width="0.5"/>
+
+  <g transform="translate(40, 300)">
+    <circle cx="8" cy="8" r="3" fill="#2C5F5C"/>
+    <text x="20" y="12" class="t-body" font-size="11" fill="#2D3436">학생의 자발적 선택에 의한 참여</text>
+  </g>
+  <g transform="translate(40, 322)">
+    <circle cx="8" cy="8" r="3" fill="#E07A5F"/>
+    <text x="20" y="12" class="t-body" font-size="11" fill="#2D3436">시설 복지사(선생님) 필참</text>
+  </g>
+  <g transform="translate(40, 344)">
+    <circle cx="8" cy="8" r="3" fill="#D4A574"/>
+    <text x="20" y="12" class="t-body" font-size="11" fill="#2D3436">식사비는 무파 보유 직불카드로 직접 결제</text>
+  </g>
+  <g transform="translate(320, 300)">
+    <circle cx="8" cy="8" r="3" fill="#2C5F5C"/>
+    <text x="20" y="12" class="t-body" font-size="11" fill="#2D3436">월 1회(주말) 정기 운영</text>
+  </g>
+  <g transform="translate(320, 322)">
+    <circle cx="8" cy="8" r="3" fill="#E07A5F"/>
+    <text x="20" y="12" class="t-body" font-size="11" fill="#2D3436">공부하는 습관 배양</text>
+  </g>
+  <g transform="translate(320, 344)">
+    <circle cx="8" cy="8" r="3" fill="#D4A574"/>
+    <text x="20" y="12" class="t-body" font-size="11" fill="#2D3436">외부인과의 대화로 세계관 확장</text>
+  </g>
+</svg>

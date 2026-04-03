@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="640" height="400">
+  <defs>
+    <style>
+      .t-title { font-family: 'Georgia', 'Noto Serif KR', serif; font-weight: 700; }
+      .t-body { font-family: 'Helvetica Neue', 'Noto Sans KR', sans-serif; }
+      .t-label { font-family: 'Helvetica Neue', 'Noto Sans KR', sans-serif; font-size: 10px; }
+      .t-mono { font-family: 'Courier', monospace; font-size: 9px; }
+    </style>
+    <marker id="a1" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+      <path d="M 0 0 L 7 2.5 L 0 5" fill="none" stroke="#2C5F5C" stroke-width="0.7"/>
+    </marker>
+    <marker id="a2" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+      <path d="M 0 0 L 7 2.5 L 0 5" fill="none" stroke="#E07A5F" stroke-width="0.7"/>
+    </marker>
+    <marker id="a3" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+      <path d="M 0 0 L 7 2.5 L 0 5" fill="none" stroke="#D4A574" stroke-width="0.7"/>
+    </marker>
+  </defs>
+
+  <rect width="640" height="400" fill="#F5F1EB"/>
+
+  <text x="40" y="36" class="t-title" font-size="20" fill="#2D3436">기부금 흐름도</text>
+  <text x="40" y="54" class="t-body" font-size="11" fill="#636E72" font-style="italic">설립안 그림2 기반 &#x2014; 정보/기부금 흐름</text>
+  <line x1="40" y1="62" x2="600" y2="62" stroke="#B2BEC3" stroke-width="0.5"/>
+
+  <!-- Row 1: Money flow -->
+  <text x="40" y="92" class="t-body" font-size="12" fill="#2C5F5C" font-weight="600">기부금 흐름</text>
+
+  <!-- Donor box -->
+  <rect x="40" y="104" width="100" height="50" rx="3" fill="none" stroke="#2C5F5C" stroke-width="1"/>
+  <text x="90" y="126" text-anchor="middle" class="t-body" font-size="12" fill="#2C5F5C">기부자</text>
+  <text x="90" y="142" text-anchor="middle" class="t-mono" fill="#636E72">가상계좌 입금</text>
+
+  <!-- Arrow -->
+  <line x1="140" y1="130" x2="200" y2="130" stroke="#2C5F5C" stroke-width="1" marker-end="url(#a1)"/>
+
+  <!-- Mumuki account -->
+  <rect x="208" y="104" width="120" height="50" rx="3" fill="#2C5F5C" fill-opacity="0.06" stroke="#2C5F5C" stroke-width="1"/>
+  <text x="268" y="124" text-anchor="middle" class="t-body" font-size="11" fill="#2C5F5C" font-weight="600">무파 명의 계좌</text>
+  <text x="268" y="140" text-anchor="middle" class="t-mono" fill="#636E72">수령 + 매칭 확인</text>
+
+  <!-- Arrow to beneficiary -->
+  <line x1="328" y1="130" x2="388" y2="130" stroke="#E07A5F" stroke-width="1" marker-end="url(#a2)"/>
+  <text x="358" y="122" text-anchor="middle" class="t-label" fill="#E07A5F">사업수행비</text>
+
+  <!-- Beneficiary -->
+  <rect x="396" y="104" width="100" height="50" rx="3" fill="none" stroke="#E07A5F" stroke-width="1"/>
+  <text x="446" y="126" text-anchor="middle" class="t-body" font-size="12" fill="#E07A5F">수혜자</text>
+  <text x="446" y="142" text-anchor="middle" class="t-mono" fill="#636E72">직접 전달</text>
+
+  <!-- Row 2: Cost structure -->
+  <line x1="40" y1="178" x2="600" y2="178" stroke="#B2BEC3" stroke-width="0.5"/>
+  <text x="40" y="200" class="t-body" font-size="12" fill="#D4A574" font-weight="600">비용 구조 (Charity Water 모델)</text>
+
+  <!-- Cost breakdown bar -->
+  <g transform="translate(40, 214)">
+    <!-- Total bar -->
+    <rect x="0" y="0" width="400" height="30" rx="3" fill="none" stroke="#B2BEC3" stroke-width="0.8"/>
+
+    <!-- 사업수행비 (70%) -->
+    <rect x="0" y="0" width="280" height="30" rx="3" fill="#2C5F5C" fill-opacity="0.15"/>
+    <text x="140" y="20" text-anchor="middle" class="t-body" font-size="11" fill="#2C5F5C" font-weight="600">사업수행비</text>
+
+    <!-- 일반관리비 (20%) -->
+    <rect x="280" y="0" width="80" height="30" fill="#D4A574" fill-opacity="0.2"/>
+    <text x="320" y="20" text-anchor="middle" class="t-label" fill="#D4A574" font-weight="600">관리비</text>
+
+    <!-- 모금비 (10%) -->
+    <rect x="360" y="0" width="40" height="30" rx="0 3 3 0" fill="#E07A5F" fill-opacity="0.15"/>
+    <text x="380" y="20" text-anchor="middle" class="t-label" fill="#E07A5F">모금</text>
+
+    <!-- Labels below -->
+    <text x="140" y="48" text-anchor="middle" class="t-label" fill="#2C5F5C">기부금으로 충당</text>
+    <line x1="0" y1="38" x2="280" y2="38" stroke="#2C5F5C" stroke-width="0.5"/>
+
+    <text x="340" y="48" text-anchor="middle" class="t-label" fill="#D4A574">별도 모금으로 충당</text>
+    <line x1="280" y1="38" x2="400" y2="38" stroke="#D4A574" stroke-width="0.5"/>
+
+    <!-- Bracket annotation -->
+    <text x="450" y="10" class="t-label" fill="#636E72" font-style="italic">공익목적사업비</text>
+    <text x="450" y="24" class="t-label" fill="#636E72" font-style="italic">= 수행비 + 관리비 + 모금비</text>
+  </g>
+
+  <!-- Row 3: Transparency mechanism -->
+  <line x1="40" y1="290" x2="600" y2="290" stroke="#B2BEC3" stroke-width="0.5"/>
+  <text x="40" y="312" class="t-body" font-size="12" fill="#2D3436" font-weight="600">투명성 메커니즘</text>
+
+  <g transform="translate(40, 326)">
+    <!-- Step boxes -->
+    <rect x="0" y="0" width="110" height="44" rx="3" fill="none" stroke="#2C5F5C" stroke-width="0.8"/>
+    <text x="55" y="18" text-anchor="middle" class="t-label" fill="#2C5F5C" font-weight="600">가상계좌 입금</text>
+    <text x="55" y="32" text-anchor="middle" class="t-mono" fill="#636E72">기부자별 매칭</text>
+
+    <line x1="110" y1="22" x2="130" y2="22" stroke="#B2BEC3" stroke-width="0.8" marker-end="url(#a1)"/>
+
+    <rect x="138" y="0" width="110" height="44" rx="3" fill="none" stroke="#2C5F5C" stroke-width="0.8"/>
+    <text x="193" y="18" text-anchor="middle" class="t-label" fill="#2C5F5C" font-weight="600">지출 실행</text>
+    <text x="193" y="32" text-anchor="middle" class="t-mono" fill="#636E72">매칭 지출 내역</text>
+
+    <line x1="248" y1="22" x2="268" y2="22" stroke="#B2BEC3" stroke-width="0.8" marker-end="url(#a1)"/>
+
+    <rect x="276" y="0" width="110" height="44" rx="3" fill="none" stroke="#D4A574" stroke-width="0.8"/>
+    <text x="331" y="18" text-anchor="middle" class="t-label" fill="#D4A574" font-weight="600">기부자 알림</text>
+    <text x="331" y="32" text-anchor="middle" class="t-mono" fill="#D4A574">입출금 병기</text>
+
+    <line x1="386" y1="22" x2="406" y2="22" stroke="#B2BEC3" stroke-width="0.8" marker-end="url(#a1)"/>
+
+    <rect x="414" y="0" width="110" height="44" rx="3" fill="none" stroke="#E07A5F" stroke-width="0.8"/>
+    <text x="469" y="18" text-anchor="middle" class="t-label" fill="#E07A5F" font-weight="600">홈페이지 공개</text>
+    <text x="469" y="32" text-anchor="middle" class="t-mono" fill="#E07A5F">비식별화 처리</text>
+  </g>
+</svg>

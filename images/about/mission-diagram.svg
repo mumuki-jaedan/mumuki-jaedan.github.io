@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <style>
+      .t-title { font-family: 'Georgia', 'Noto Serif KR', serif; font-weight: 700; }
+      .t-body { font-family: 'Helvetica Neue', 'Noto Sans KR', sans-serif; }
+      .t-label { font-family: 'Helvetica Neue', 'Noto Sans KR', sans-serif; font-size: 10px; }
+    </style>
+  </defs>
+
+  <rect width="600" height="400" fill="#F5F1EB"/>
+
+  <text x="300" y="36" text-anchor="middle" class="t-title" font-size="20" fill="#2D3436">미션과 비전</text>
+  <line x1="60" y1="46" x2="540" y2="46" stroke="#B2BEC3" stroke-width="0.5"/>
+
+  <!-- Problem → Solution → Impact (horizontal flow) -->
+
+  <!-- Problem -->
+  <g transform="translate(100, 100)">
+    <text x="0" y="0" class="t-body" font-size="14" fill="#636E72" font-weight="600">문제</text>
+    <line x1="0" y1="8" x2="80" y2="8" stroke="#636E72" stroke-width="0.5"/>
+
+    <text x="0" y="32" class="t-label" fill="#2D3436">&#x2022; 기부 문화의 불투명성</text>
+    <text x="0" y="48" class="t-label" fill="#2D3436">&#x2022; 운영비 인식 상충</text>
+    <text x="0" y="64" class="t-label" fill="#2D3436">&#x2022; 복지 사각지대 존재</text>
+    <text x="0" y="80" class="t-label" fill="#2D3436">&#x2022; 수혜자의 제한된 활동</text>
+    <text x="0" y="96" class="t-label" fill="#2D3436">&#x2022; 부족한 인적 네트워크</text>
+  </g>
+
+  <!-- Arrow -->
+  <g transform="translate(220, 140)">
+    <line x1="0" y1="0" x2="50" y2="0" stroke="#2C5F5C" stroke-width="1.2"/>
+    <polygon points="50,-4 58,0 50,4" fill="#2C5F5C"/>
+  </g>
+
+  <!-- Solution -->
+  <g transform="translate(290, 100)">
+    <text x="0" y="0" class="t-body" font-size="14" fill="#2C5F5C" font-weight="700">솔루션</text>
+    <line x1="0" y1="8" x2="80" y2="8" stroke="#2C5F5C" stroke-width="0.5"/>
+
+    <text x="0" y="32" class="t-label" fill="#2D3436" font-weight="600">&#x2022; 다이렉트 기부 솔루션</text>
+    <text x="0" y="48" class="t-label" fill="#2D3436" font-weight="600">&#x2022; 회계 전부 공개</text>
+    <text x="0" y="64" class="t-label" fill="#2D3436" font-weight="600">&#x2022; 운영비 별도 조달</text>
+    <text x="0" y="80" class="t-label" fill="#2D3436" font-weight="600">&#x2022; 도서관 동행</text>
+    <text x="0" y="96" class="t-label" fill="#2D3436" font-weight="600">&#x2022; 직업 멘토링</text>
+  </g>
+
+  <!-- Arrow -->
+  <g transform="translate(420, 140)">
+    <line x1="0" y1="0" x2="50" y2="0" stroke="#E07A5F" stroke-width="1.2"/>
+    <polygon points="50,-4 58,0 50,4" fill="#E07A5F"/>
+  </g>
+
+  <!-- Impact -->
+  <g transform="translate(490, 100)">
+    <text x="0" y="0" class="t-body" font-size="14" fill="#E07A5F" font-weight="700">임팩트</text>
+    <line x1="0" y1="8" x2="60" y2="8" stroke="#E07A5F" stroke-width="0.5"/>
+
+    <text x="0" y="32" class="t-label" fill="#2D3436">&#x2022; 기부 신뢰 회복</text>
+    <text x="0" y="48" class="t-label" fill="#2D3436">&#x2022; 지속가능 후원</text>
+    <text x="0" y="64" class="t-label" fill="#2D3436">&#x2022; 사각지대 해소</text>
+    <text x="0" y="80" class="t-label" fill="#2D3436">&#x2022; 학습 습관 형성</text>
+    <text x="0" y="96" class="t-label" fill="#2D3436">&#x2022; 세계관 확장</text>
+  </g>
+
+  <!-- Timeline at bottom (Year 1, 2, 3) -->
+  <line x1="60" y1="260" x2="540" y2="260" stroke="#B2BEC3" stroke-width="0.5"/>
+
+  <text x="300" y="284" text-anchor="middle" class="t-body" font-size="14" fill="#2D3436" font-weight="600">연차별 목표</text>
+
+  <!-- Year markers on a timeline -->
+  <line x1="100" y1="310" x2="500" y2="310" stroke="#2C5F5C" stroke-width="1"/>
+
+  <!-- Year 1 -->
+  <circle cx="140" cy="310" r="5" fill="#2C5F5C"/>
+  <text x="140" y="332" text-anchor="middle" class="t-body" font-size="12" fill="#2C5F5C" font-weight="600">1차년</text>
+  <text x="140" y="348" text-anchor="middle" class="t-label" fill="#636E72">법인격 취득</text>
+  <text x="140" y="362" text-anchor="middle" class="t-label" fill="#636E72">커리큘럼 점검</text>
+  <text x="140" y="376" text-anchor="middle" class="t-label" fill="#636E72">도서관 동행 시작</text>
+
+  <!-- Year 2 -->
+  <circle cx="300" cy="310" r="5" fill="#D4A574"/>
+  <text x="300" y="332" text-anchor="middle" class="t-body" font-size="12" fill="#D4A574" font-weight="600">2차년</text>
+  <text x="300" y="348" text-anchor="middle" class="t-label" fill="#636E72">자가 학습 모델 안착</text>
+  <text x="300" y="362" text-anchor="middle" class="t-label" fill="#636E72">다이렉트 기부 기획</text>
+  <text x="300" y="376" text-anchor="middle" class="t-label" fill="#636E72">결제 시스템 개발</text>
+
+  <!-- Year 3 -->
+  <circle cx="460" cy="310" r="5" fill="#E07A5F"/>
+  <text x="460" y="332" text-anchor="middle" class="t-body" font-size="12" fill="#E07A5F" font-weight="600">3차년</text>
+  <text x="460" y="348" text-anchor="middle" class="t-label" fill="#636E72">다이렉트 기부 도입</text>
+  <text x="460" y="362" text-anchor="middle" class="t-label" fill="#636E72">가상계좌 매칭</text>
+  <text x="460" y="376" text-anchor="middle" class="t-label" fill="#636E72">실시간 추적 시스템</text>
+</svg>

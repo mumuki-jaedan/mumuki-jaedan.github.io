@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 320" width="720" height="320">
+  <defs>
+    <style>
+      .label { font-family: 'Georgia', serif; font-size: 11px; fill: #2D3436; }
+      .hex { font-family: monospace; font-size: 10px; fill: #636E72; }
+      .section { font-family: 'Georgia', serif; font-size: 14px; fill: #2D3436; font-weight: 700; }
+    </style>
+  </defs>
+
+  <!-- Title -->
+  <text x="24" y="28" class="section" font-size="18">Color Palette</text>
+  <line x1="24" y1="36" x2="696" y2="36" stroke="#B2BEC3" stroke-width="0.5"/>
+
+  <!-- Primary -->
+  <text x="24" y="64" class="section">Primary</text>
+
+  <rect x="24" y="76" width="100" height="80" rx="4" fill="#2C5F5C"/>
+  <text x="74" y="176" class="label" text-anchor="middle">Deep Teal</text>
+  <text x="74" y="192" class="hex" text-anchor="middle">#2C5F5C</text>
+
+  <rect x="140" y="76" width="100" height="80" rx="4" fill="#E07A5F"/>
+  <text x="190" y="176" class="label" text-anchor="middle">Warm Coral</text>
+  <text x="190" y="192" class="hex" text-anchor="middle">#E07A5F</text>
+
+  <rect x="256" y="76" width="100" height="80" rx="4" fill="#D4A574"/>
+  <text x="306" y="176" class="label" text-anchor="middle">Sand Gold</text>
+  <text x="306" y="192" class="hex" text-anchor="middle">#D4A574</text>
+
+  <!-- Neutrals -->
+  <text x="400" y="64" class="section">Neutrals</text>
+
+  <rect x="400" y="76" width="60" height="80" rx="4" fill="#2D3436"/>
+  <text x="430" y="176" class="label" text-anchor="middle">Charcoal</text>
+  <text x="430" y="192" class="hex" text-anchor="middle">#2D3436</text>
+
+  <rect x="470" y="76" width="60" height="80" rx="4" fill="#636E72"/>
+  <text x="500" y="176" class="label" text-anchor="middle">Warm Gray</text>
+  <text x="500" y="192" class="hex" text-anchor="middle">#636E72</text>
+
+  <rect x="540" y="76" width="60" height="80" rx="4" fill="#B2BEC3"/>
+  <text x="570" y="176" class="label" text-anchor="middle">Light Gray</text>
+  <text x="570" y="192" class="hex" text-anchor="middle">#B2BEC3</text>
+
+  <rect x="610" y="76" width="60" height="80" rx="4" fill="#F5F1EB" stroke="#B2BEC3" stroke-width="0.5"/>
+  <text x="640" y="176" class="label" text-anchor="middle">Off White</text>
+  <text x="640" y="192" class="hex" text-anchor="middle">#F5F1EB</text>
+
+  <!-- Semantic -->
+  <text x="24" y="228" class="section">Semantic</text>
+
+  <rect x="24" y="240" width="80" height="40" rx="4" fill="#27AE60"/>
+  <text x="64" y="296" class="label" text-anchor="middle">Success</text>
+  <text x="64" y="312" class="hex" text-anchor="middle">#27AE60</text>
+
+  <rect x="116" y="240" width="80" height="40" rx="4" fill="#2980B9"/>
+  <text x="156" y="296" class="label" text-anchor="middle">Info</text>
+  <text x="156" y="312" class="hex" text-anchor="middle">#2980B9</text>
+
+  <rect x="208" y="240" width="80" height="40" rx="4" fill="#F39C12"/>
+  <text x="248" y="296" class="label" text-anchor="middle">Warning</text>
+  <text x="248" y="312" class="hex" text-anchor="middle">#F39C12</text>
+
+  <rect x="300" y="240" width="80" height="40" rx="4" fill="#C0392B"/>
+  <text x="340" y="296" class="label" text-anchor="middle">Error</text>
+  <text x="340" y="312" class="hex" text-anchor="middle">#C0392B</text>
+</svg>
