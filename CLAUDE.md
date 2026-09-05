@@ -131,6 +131,7 @@ git push origin main
 | `tech_document/20260403_소스코드_저장_및_배포_전략.md` | GitHub + Cloudflare 배포 전략 |
 | `tech_document/20260403_배포방식_비교_GitHub_Pages_vs_Cloudflare_Pages.md` | 배포 방식 비교 |
 | `tech_document/20260905_웹사이트_전체점검_및_개선방안.md` | 전체 점검 결과, 심각도별 개선방안 |
+| `tech_document/20260905_모바일_첫화면_기부CTA_개선방안.md` | 모바일 첫 화면의 후원 CTA 위계 문제, 측정 결과와 5개 방안 |
 
 ## 참고 자료
 

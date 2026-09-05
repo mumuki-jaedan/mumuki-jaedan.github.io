@@ -547,6 +547,40 @@ hr {
     margin-left: 0;
   }
 
+  /* ── 히어로 첫 화면의 행동 위계 ──────────────────────
+     모바일에서는 버튼이 전폭 블록이 되어, 채움 버튼인 '후원하기'가
+     첫 화면에서 가장 큰 색 덩어리가 된다. QR로 처음 들어온 사람에게는
+     소개보다 모금이 먼저 오는 인상을 준다.
+
+     행동 경로는 그대로 두고 위계만 낮춘다.
+     - 순서: 더 알아보기 → 후원하기 (소스 순서는 유지, 표시만 교체)
+     - 채도: 후원하기를 테두리형으로 (채움 버튼은 하단 CTA 섹션에 유지)
+     데스크톱(577px 이상)에는 영향이 없다. */
+
+  .hero-actions,
+  .hero-actions p {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .hero-actions .btn-outline { order: 1; }
+  .hero-actions .btn-donate  { order: 2; }
+
+  .hero-actions .btn-donate {
+    background-color: transparent;
+    color: $warm-coral;
+    border: 1.5px solid $warm-coral;
+    box-shadow: none;
+
+    &:hover {
+      background-color: $warm-coral;
+      color: white;
+      box-shadow: none;
+      transform: none;
+    }
+  }
+
   .cta-title {
     font-size: 1.7rem;
   }

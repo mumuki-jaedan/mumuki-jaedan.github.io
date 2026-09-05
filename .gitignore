@@ -10,6 +10,7 @@ tech_document/
 
 # 테스트 (사이트에 배포하지 않음)
 test/
+.playwright-mcp/
 
 # 환경 변수
 .env
