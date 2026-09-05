@@ -13,14 +13,14 @@
       <path d="M 0 0 L 7 2.5 L 0 5" fill="none" stroke="#E07A5F" stroke-width="0.7"/>
     </marker>
     <marker id="a3" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
-      <path d="M 0 0 L 7 2.5 L 0 5" fill="none" stroke="#D4A574" stroke-width="0.7"/>
+      <path d="M 0 0 L 7 2.5 L 0 5" fill="none" stroke="#8D9A9C" stroke-width="0.7"/>
     </marker>
   </defs>
 
   <rect width="640" height="400" fill="#F5F1EB"/>
 
   <text x="40" y="36" class="t-title" font-size="20" fill="#2D3436">기부금 흐름도</text>
-  <text x="40" y="54" class="t-body" font-size="11" fill="#636E72" font-style="italic">설립안 그림2 기반 &#x2014; 정보/기부금 흐름</text>
+  <text x="40" y="54" class="t-body" font-size="11" fill="#636E72" font-style="italic">창립총회 자료 기반 &#x2014; 기부금 흐름과 비용 구조</text>
   <line x1="40" y1="62" x2="600" y2="62" stroke="#B2BEC3" stroke-width="0.5"/>
 
   <!-- Row 1: Money flow -->
@@ -36,8 +36,8 @@
 
   <!-- Mumuki account -->
   <rect x="208" y="104" width="120" height="50" rx="3" fill="#2C5F5C" fill-opacity="0.06" stroke="#2C5F5C" stroke-width="1"/>
-  <text x="268" y="124" text-anchor="middle" class="t-body" font-size="11" fill="#2C5F5C" font-weight="600">무파 명의 계좌</text>
-  <text x="268" y="140" text-anchor="middle" class="t-mono" fill="#636E72">수령 + 매칭 확인</text>
+  <text x="268" y="124" text-anchor="middle" class="t-body" font-size="11" fill="#2C5F5C" font-weight="600">신탁계좌 (모계좌)</text>
+  <text x="268" y="140" text-anchor="middle" class="t-mono" fill="#636E72">수령 &#183; 매칭 확인</text>
 
   <!-- Arrow to beneficiary -->
   <line x1="328" y1="130" x2="388" y2="130" stroke="#E07A5F" stroke-width="1" marker-end="url(#a2)"/>
@@ -67,7 +67,7 @@
 
     <!-- 모금비 (10%) -->
     <rect x="360" y="0" width="40" height="30" rx="0 3 3 0" fill="#E07A5F" fill-opacity="0.15"/>
-    <text x="380" y="20" text-anchor="middle" class="t-label" fill="#E07A5F">모금</text>
+    <text x="380" y="20" text-anchor="middle" class="t-label" fill="#E07A5F">모금비</text>
 
     <!-- Labels below -->
     <text x="140" y="48" text-anchor="middle" class="t-label" fill="#2C5F5C">기부금으로 충당</text>
@@ -91,19 +91,19 @@
     <text x="55" y="18" text-anchor="middle" class="t-label" fill="#2C5F5C" font-weight="600">가상계좌 입금</text>
     <text x="55" y="32" text-anchor="middle" class="t-mono" fill="#636E72">기부자별 매칭</text>
 
-    <line x1="110" y1="22" x2="130" y2="22" stroke="#B2BEC3" stroke-width="0.8" marker-end="url(#a1)"/>
+    <line x1="110" y1="22" x2="130" y2="22" stroke="#8D9A9C" stroke-width="0.8" marker-end="url(#a3)"/>
 
     <rect x="138" y="0" width="110" height="44" rx="3" fill="none" stroke="#2C5F5C" stroke-width="0.8"/>
     <text x="193" y="18" text-anchor="middle" class="t-label" fill="#2C5F5C" font-weight="600">지출 실행</text>
     <text x="193" y="32" text-anchor="middle" class="t-mono" fill="#636E72">매칭 지출 내역</text>
 
-    <line x1="248" y1="22" x2="268" y2="22" stroke="#B2BEC3" stroke-width="0.8" marker-end="url(#a1)"/>
+    <line x1="248" y1="22" x2="268" y2="22" stroke="#8D9A9C" stroke-width="0.8" marker-end="url(#a3)"/>
 
     <rect x="276" y="0" width="110" height="44" rx="3" fill="none" stroke="#D4A574" stroke-width="0.8"/>
     <text x="331" y="18" text-anchor="middle" class="t-label" fill="#D4A574" font-weight="600">기부자 알림</text>
     <text x="331" y="32" text-anchor="middle" class="t-mono" fill="#D4A574">입출금 병기</text>
 
-    <line x1="386" y1="22" x2="406" y2="22" stroke="#B2BEC3" stroke-width="0.8" marker-end="url(#a1)"/>
+    <line x1="386" y1="22" x2="406" y2="22" stroke="#8D9A9C" stroke-width="0.8" marker-end="url(#a3)"/>
 
     <rect x="414" y="0" width="110" height="44" rx="3" fill="none" stroke="#E07A5F" stroke-width="0.8"/>
     <text x="469" y="18" text-anchor="middle" class="t-label" fill="#E07A5F" font-weight="600">홈페이지 공개</text>

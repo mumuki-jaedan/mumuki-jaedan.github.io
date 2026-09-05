@@ -51,16 +51,17 @@ mumuki/
 ├── .github/workflows/    ← GitHub Actions CI/CD
 │   └── deploy.yml        ← Quarto 빌드 → Pages 배포
 ├── about/*.qmd           ← 재단소개 (설립 취지, 조직, 연혁)
-├── programs/*.qmd        ← 사업안내 (도서관 동행, 직업 교육, 다이렉트 기부)
+├── programs/*.qmd        ← 사업안내 (도서관 동행, 진로 멘토링, 학습 기자재, AI 교육, 꼬리표 있는 기부)
 ├── transparency/*.qmd    ← 투명한 운영 (원칙, 회계 공시, 감사보고서)
 ├── participate/*.qmd     ← 참여하기 (후원, 봉사, 기관 협력)
 ├── news/**/*.qmd         ← 소식 (블로그 listing)
 ├── legal/*.qmd           ← 법적 페이지 (개인정보, 이용약관)
 ├── assets/               ← 브랜드 에셋 (로고 4종, 색상 팔레트)
 ├── images/               ← Tufte 스타일 SVG 일러스트 (16종)
-├── tech_document/        ← 기술 문서 (Git 포함, 사이트 미포함)
+├── tech_document/        ← 기술 문서 (Git 제외, 사이트 미포함)
 ├── document/             ← 설립안 원본 (Git 제외, Google Drive만)
-├── data/                 ← 회계 데이터 (Git 제외, 향후 사용)
+├── documents/            ← 공개 자료 원문 PDF (Git 포함, 사이트에 배포)
+├── test/                 ← 테스트 시나리오·러너 (Git 제외, 사이트 미포함)
 ├── docs/                 ← 빌드 출력 (Git 제외, GitHub Actions가 빌드)
 └── .claude/commands/     ← Claude Code 커스텀 커맨드
 ```
@@ -129,6 +130,7 @@ git push origin main
 | `tech_document/20260403_프로젝트구조_리팩토링_및_디자인개선.md` | 구조 변경, 디자인 개선 상세 |
 | `tech_document/20260403_소스코드_저장_및_배포_전략.md` | GitHub + Cloudflare 배포 전략 |
 | `tech_document/20260403_배포방식_비교_GitHub_Pages_vs_Cloudflare_Pages.md` | 배포 방식 비교 |
+| `tech_document/20260905_웹사이트_전체점검_및_개선방안.md` | 전체 점검 결과, 심각도별 개선방안 |
 
 ## 참고 자료
 
@@ -137,7 +139,32 @@ git push origin main
 - [Charity Water 투명성 모델](https://www.charitywater.org/our-approach)
 - [r2bit.com 참고 사례](https://r2bit.com/) — bit2r/bit2r.github.io (동일 구조)
 
-## 설립안 원본
+## 원본 자료 (콘텐츠 근거)
+
+우선순위: **창립총회 제출 자료 > 설립안**. 두 자료가 다를 경우 총회 자료를 따른다.
+
+### 창립총회 제출 자료 (2026-09-05) — 최우선 근거
+
+`documents/`에 보관하며, **웹사이트에 원문 그대로 공개**한다 (투명한 운영 → 공개 자료).
+
+| 파일 | 내용 |
+|------|------|
+| `documents/mumuki-articles-summary-20260905.pdf` | 정관 주요내용 — 법인명·소재지·목적·사업·회원·임원·재산·회계공개 |
+| `documents/mumuki-business-plan-20260905.pdf` | 사업계획서 — 4대 사업 및 1~2년차 소요예산 |
+| `documents/mumuki-founding-assembly-20260905.pdf` | 발표자료 — 꼬리표 있는 기부 솔루션 6단계 구조, 복지제도 현황, 도서관 동행 사례 |
+
+- **Git 포함** (공개 리포에 배포됨). `_quarto.yml`의 `resources: documents/`로 `docs/documents/`에 복사된다
+- 파일명은 ASCII로 유지한다 — 한글·괄호는 URL에서 인코딩되어 깨진다
+- 한글 파일명 원본을 두었던 `data/` 폴더는 2026-09-05에 삭제했다 (사본이 `documents/`에 있어 중복).
+  `.gitignore`와 `_quarto.yml`의 `data/` 제외 규칙은 남겨 두었다 — 향후 회계 데이터를 이 이름으로 둘 때 실수로 공개되지 않도록 하는 안전장치다
+
+### 설립안 원본
 
 - `document/5-다이렉트 기부 솔루션을 위한 복지단체 설립안_20260228.docx`
 - **Git 미포함** (.gitignore) — Google Drive에서만 관리
+
+### 공개 시 유의사항
+
+- 총회 발표자료는 내부 청중용이다. 연계 기관에 대한 개별 평가(후원 중단 사유 등), 익명 처리된 기관명, 발표자 개인 신상은 **웹사이트에 공개하지 않는다**. 집계값과 교훈만 원칙으로 정리해 게시한다.
+- 임원 명단은 설립허가·법인등기 완료 후 공개한다.
+- 법인 상태 표기: 2026-09-05 창립총회 완료(정관 채택·사업계획 승인), **설립허가·법인등기 진행 중**. '법인 설립 완료'로 쓰지 않는다.

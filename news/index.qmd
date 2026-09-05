@@ -4,6 +4,7 @@ description: "무무키 파운데이션의 활동 소식과 공지사항"
 listing:
   contents: posts
   sort: "date desc"
+  date-format: "YYYY.MM.DD"
   type: default
   categories: true
   feed: true

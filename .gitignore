@@ -8,6 +8,9 @@ document/
 data/
 tech_document/
 
+# 테스트 (사이트에 배포하지 않음)
+test/
+
 # 환경 변수
 .env
 .env.local

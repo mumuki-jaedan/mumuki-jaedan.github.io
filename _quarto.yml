@@ -11,10 +11,13 @@ project:
     - "legal/"
   resources:
     - CNAME
+    - documents/
+    - "!test/"
+    - "!data/"
 
 website:
   title: "무무키 파운데이션"
-  description: "다이렉트 기부 솔루션으로 기부자와 수혜자를 잇는 투명한 복지단체"
+  description: "서울지역 취약계층 청소년을 위한 교육·문화·멘토링 사업. 꼬리표 있는 기부 솔루션으로 기부자와 수혜자를 직접 잇습니다."
   site-url: https://mumuki.net
   favicon: assets/logo/mumuki-favicon.svg
 
@@ -33,11 +36,16 @@ website:
             href: about/history.qmd
       - text: "사업안내"
         menu:
-          - text: "도서관 동행"
+          - text: "도서관 동행 및 정서 지원"
             href: programs/library.qmd
-          - text: "직업 교육"
+          - text: "진로 상담 · 멘토링"
             href: programs/career.qmd
-          - text: "다이렉트 기부"
+          - text: "학습 기자재 지원"
+            href: programs/equipment.qmd
+          - text: "AI 교육 지원"
+            href: programs/ai-education.qmd
+          - text: "---"
+          - text: "꼬리표 있는 기부 솔루션"
             href: programs/direct-donation.qmd
       - text: "투명한 운영"
         menu:
@@ -47,6 +55,8 @@ website:
             href: transparency/finance.qmd
           - text: "감사보고서"
             href: transparency/audit.qmd
+          - text: "공개 자료"
+            href: transparency/documents.qmd
       - text: "참여하기"
         menu:
           - text: "후원 안내"
@@ -69,7 +79,8 @@ website:
 
   page-footer:
     left: |
-      무무키 파운데이션 | (가칭) 무파 준비위
+      사단법인 무무키 (무무키 파운데이션)  
+      서울특별시 강남구 학동로 45길 7, 503호
     center: |
       [개인정보처리방침](/legal/privacy.qmd) | [이용약관](/legal/terms.qmd)
     right: |

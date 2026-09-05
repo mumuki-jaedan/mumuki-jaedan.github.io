@@ -10,7 +10,7 @@
   <rect width="600" height="400" fill="#F5F1EB"/>
 
   <!-- Title -->
-  <text x="40" y="36" class="t-title" font-size="20" fill="#2D3436">도서관 동행 및 식사</text>
+  <text x="40" y="36" class="t-title" font-size="20" fill="#2D3436">도서관 동행 및 정서 지원</text>
   <line x1="40" y1="46" x2="560" y2="46" stroke="#B2BEC3" stroke-width="0.5"/>
 
   <!-- Timeline flow (horizontal, Tufte-minimal) -->
@@ -19,20 +19,20 @@
     <circle cx="0" cy="40" r="20" fill="none" stroke="#2C5F5C" stroke-width="1.2"/>
     <text x="0" y="44" text-anchor="middle" class="t-body" font-size="18" fill="#2C5F5C">1</text>
     <text x="0" y="80" text-anchor="middle" class="t-body" font-size="12" fill="#2D3436" font-weight="600">모임</text>
-    <text x="0" y="96" text-anchor="middle" class="t-label" fill="#636E72">주말 14:00</text>
+    <text x="0" y="96" text-anchor="middle" class="t-label" fill="#636E72">주 1회</text>
 
     <!-- Person icons below -->
-    <g transform="translate(-20, 110)">
+    <g transform="translate(-34, 110)">
       <!-- Adult (volunteer) -->
       <circle cx="10" cy="8" r="5" fill="none" stroke="#2C5F5C" stroke-width="1"/>
       <line x1="10" y1="13" x2="10" y2="30" stroke="#2C5F5C" stroke-width="1"/>
       <text x="10" y="42" text-anchor="middle" class="t-label" fill="#636E72">후원자</text>
     </g>
-    <g transform="translate(10, 116)">
+    <g transform="translate(24, 116)">
       <!-- Student -->
       <circle cx="10" cy="8" r="4" fill="none" stroke="#E07A5F" stroke-width="1"/>
       <line x1="10" y1="12" x2="10" y2="26" stroke="#E07A5F" stroke-width="1"/>
-      <text x="10" y="36" text-anchor="middle" class="t-label" fill="#636E72">학생</text>
+      <text x="10" y="36" text-anchor="middle" class="t-label" fill="#636E72">청소년</text>
     </g>
   </g>
 
@@ -49,7 +49,7 @@
     <circle cx="0" cy="40" r="20" fill="none" stroke="#2C5F5C" stroke-width="1.2"/>
     <text x="0" y="44" text-anchor="middle" class="t-body" font-size="18" fill="#2C5F5C">2</text>
     <text x="0" y="80" text-anchor="middle" class="t-body" font-size="12" fill="#2D3436" font-weight="600">도서관</text>
-    <text x="0" y="96" text-anchor="middle" class="t-label" fill="#636E72">14:00~17:00</text>
+    <text x="0" y="96" text-anchor="middle" class="t-label" fill="#636E72">독서 지도사 &#183; 자원봉사자</text>
 
     <!-- Books icon -->
     <g transform="translate(-18, 110)">
@@ -57,7 +57,7 @@
       <rect x="12" y="4" width="10" height="26" rx="1" fill="none" stroke="#D4A574" stroke-width="0.8"/>
       <rect x="24" y="2" width="10" height="28" rx="1" fill="none" stroke="#E07A5F" stroke-width="0.8"/>
     </g>
-    <text x="0" y="156" text-anchor="middle" class="t-label" fill="#636E72">자율 학습</text>
+    <text x="0" y="156" text-anchor="middle" class="t-label" fill="#636E72">1:2 매칭 자율 학습</text>
   </g>
 
   <!-- Arrow -->
@@ -67,8 +67,8 @@
   <g transform="translate(360, 80)">
     <circle cx="0" cy="40" r="20" fill="none" stroke="#2C5F5C" stroke-width="1.2"/>
     <text x="0" y="44" text-anchor="middle" class="t-body" font-size="18" fill="#2C5F5C">3</text>
-    <text x="0" y="80" text-anchor="middle" class="t-body" font-size="12" fill="#2D3436" font-weight="600">저녁 식사</text>
-    <text x="0" y="96" text-anchor="middle" class="t-label" fill="#636E72">17:00~</text>
+    <text x="0" y="80" text-anchor="middle" class="t-body" font-size="12" fill="#2D3436" font-weight="600">문화체험</text>
+    <text x="0" y="96" text-anchor="middle" class="t-label" fill="#636E72">월 1회</text>
 
     <!-- Plate/utensil icon -->
     <g transform="translate(-12, 115)">
@@ -76,7 +76,7 @@
       <line x1="-4" y1="12" x2="-4" y2="0" stroke="#636E72" stroke-width="0.8" stroke-linecap="round"/>
       <line x1="28" y1="12" x2="28" y2="0" stroke="#636E72" stroke-width="0.8" stroke-linecap="round"/>
     </g>
-    <text x="0" y="156" text-anchor="middle" class="t-label" fill="#636E72">대화 &amp; 교류</text>
+    <text x="0" y="156" text-anchor="middle" class="t-label" fill="#636E72">영화 &#183; 미술관 등</text>
   </g>
 
   <!-- Arrow -->
@@ -94,7 +94,7 @@
       <polyline points="0,28 8,16 16,20 24,4" fill="none" stroke="#27AE60" stroke-width="1.2"/>
       <circle cx="24" cy="4" r="2" fill="#27AE60"/>
     </g>
-    <text x="0" y="156" text-anchor="middle" class="t-label" fill="#636E72">노트북 등 지원</text>
+    <text x="0" y="156" text-anchor="middle" class="t-label" fill="#636E72">학습 기자재 지원</text>
   </g>
 
   <!-- Bottom section: Key principles (Tufte sidenote style) -->
@@ -102,19 +102,19 @@
 
   <g transform="translate(40, 300)">
     <circle cx="8" cy="8" r="3" fill="#2C5F5C"/>
-    <text x="20" y="12" class="t-body" font-size="11" fill="#2D3436">학생의 자발적 선택에 의한 참여</text>
+    <text x="20" y="12" class="t-body" font-size="11" fill="#2D3436">청소년의 자발적 선택에 의한 참여</text>
   </g>
   <g transform="translate(40, 322)">
     <circle cx="8" cy="8" r="3" fill="#E07A5F"/>
-    <text x="20" y="12" class="t-body" font-size="11" fill="#2D3436">시설 복지사(선생님) 필참</text>
+    <text x="20" y="12" class="t-body" font-size="11" fill="#2D3436">맞춤 도서 추천 &#183; 독서 토론 &#183; 학습 플래너</text>
   </g>
   <g transform="translate(40, 344)">
     <circle cx="8" cy="8" r="3" fill="#D4A574"/>
-    <text x="20" y="12" class="t-body" font-size="11" fill="#2D3436">식사비는 무파 보유 직불카드로 직접 결제</text>
+    <text x="20" y="12" class="t-body" font-size="11" fill="#2D3436">현장 비용은 무무키 직불카드로 직접 결제</text>
   </g>
   <g transform="translate(320, 300)">
     <circle cx="8" cy="8" r="3" fill="#2C5F5C"/>
-    <text x="20" y="12" class="t-body" font-size="11" fill="#2D3436">월 1회(주말) 정기 운영</text>
+    <text x="20" y="12" class="t-body" font-size="11" fill="#2D3436">주 1회 동행 + 월 1회 문화체험</text>
   </g>
   <g transform="translate(320, 322)">
     <circle cx="8" cy="8" r="3" fill="#E07A5F"/>

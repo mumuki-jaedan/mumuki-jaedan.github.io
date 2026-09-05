@@ -42,7 +42,7 @@
     <text x="0" y="78" text-anchor="middle" class="t-body" font-size="13" fill="#2D3436" font-weight="600">봉사/멘토링</text>
     <line x1="-30" y1="86" x2="30" y2="86" stroke="#D4A574" stroke-width="0.5"/>
     <text x="0" y="104" text-anchor="middle" class="t-label" fill="#636E72">도서관 동행</text>
-    <text x="0" y="118" text-anchor="middle" class="t-label" fill="#636E72">직업 소개 멘토</text>
+    <text x="0" y="118" text-anchor="middle" class="t-label" fill="#636E72">진로 멘토</text>
     <text x="0" y="132" text-anchor="middle" class="t-label" fill="#636E72">대학생/시니어 참여</text>
   </g>
 

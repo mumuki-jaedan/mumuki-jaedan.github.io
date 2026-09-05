@@ -249,7 +249,7 @@ section.section-heading::after {
 
 .program-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   margin-top: 3rem;
 }
@@ -549,5 +549,76 @@ hr {
 
   .cta-title {
     font-size: 1.7rem;
+  }
+}
+
+/* ── 표(Table) ─────────────────────────────────────────
+   Pandoc이 소스 마크다운의 문자 폭을 기준으로 고정 퍼센트
+   컬럼 폭(col style="width: 33%")을 내보내면서, 짧은 셀이
+   불필요하게 줄바꿈된다. 브라우저가 내용 기준으로 폭을
+   정하도록 되돌리고, 한국어는 어절 단위로만 끊는다. */
+
+table colgroup col {
+  width: auto !important;
+}
+
+.table,
+main table {
+  table-layout: auto;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1.75rem;
+}
+
+.table th,
+.table td,
+main table th,
+main table td {
+  word-break: keep-all;        // 한국어 어절 중간에서 끊지 않음
+  overflow-wrap: break-word;   // 긴 URL 등 예외만 강제 분리
+  vertical-align: top;
+  line-height: 1.55;
+}
+
+/* 정렬이 지정된 컬럼(금액·연도·구분 등)은 줄바꿈 금지 */
+.table th[style*="text-align: right"],
+.table td[style*="text-align: right"],
+.table th[style*="text-align: center"],
+.table td[style*="text-align: center"],
+main table th[style*="text-align: right"],
+main table td[style*="text-align: right"],
+main table th[style*="text-align: center"],
+main table td[style*="text-align: center"] {
+  white-space: nowrap;
+}
+
+/* 줄바꿈 금지 유틸리티 — 마크다운에서 [텍스트]{.nowrap} 으로 사용 */
+.nowrap {
+  white-space: nowrap;
+}
+
+/* 표 안의 링크(내려받기·사업명 등)는 중간에서 끊지 않는다 */
+.table th a,
+.table td a,
+main table th a,
+main table td a {
+  white-space: nowrap;
+}
+
+/* 첫 컬럼(항목명·사업명)은 가능한 한 한 줄로 */
+.table td:first-child strong,
+.table th:first-child,
+main table td:first-child strong,
+main table th:first-child {
+  white-space: nowrap;
+}
+
+/* 좁은 화면에서는 표를 가로 스크롤 */
+@media (max-width: 768px) {
+  .table th:first-child,
+  .table td:first-child strong,
+  main table th:first-child,
+  main table td:first-child strong {
+    white-space: normal;
   }
 }
