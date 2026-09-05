@@ -14,9 +14,11 @@ title-block-style: none
 
 [사단법인 무무키는 서울지역 **취약계층 청소년**의 학습·진로·자립을 돕습니다. **꼬리표 있는 기부 솔루션**으로 기부자와 수혜자를 수평적 관계 속에서 직접 연결하고, 모든 회계 내역은 **100% 공개**합니다.]{.hero-subtitle}
 
+[도서관 동행 · 진로 멘토링 · 학습 기자재 · AI 교육]{.hero-tagline}
+
 ::: {.hero-actions}
-[후원하기](participate/donate.qmd){.btn-donate}
-[더 알아보기](about/mission.qmd){.btn-outline}
+[무무키가 하는 일](#무무키가-하는-일){.btn-teal}
+[설립 취지](about/mission.qmd){.btn-outline}
 :::
 
 :::

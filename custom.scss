@@ -188,6 +188,36 @@ body {
   }
 }
 
+/* 정보 경로용 주 버튼. 후원(코랄)과 달리 브랜드 청록을 쓴다 —
+   행동 요구가 아니라 안내라는 신호. */
+.btn-teal {
+  background-color: $deep-teal;
+  color: white;
+  border: 1.5px solid $deep-teal;
+  padding: 0.8rem 2.2rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.25s ease;
+
+  &:hover {
+    background-color: darken($deep-teal, 8%);
+    border-color: darken($deep-teal, 8%);
+    color: white;
+  }
+}
+
+/* 히어로의 사업 요약 한 줄 — 스크롤 전에 '무엇을 하는 단체인가'에 답한다 */
+.hero-tagline {
+  display: block;
+  margin: 0 0 1.5rem;
+  font-size: 0.9rem;
+  color: $warm-gray;
+  letter-spacing: 0.02em;
+}
+
 .btn-outline {
   background-color: transparent;
   color: $deep-teal;
@@ -537,7 +567,8 @@ hr {
   }
 
   .btn-donate,
-  .btn-outline {
+  .btn-outline,
+  .btn-teal {
     display: block;
     text-align: center;
     margin: 0.5rem 0;
@@ -547,38 +578,28 @@ hr {
     margin-left: 0;
   }
 
-  /* ── 히어로 첫 화면의 행동 위계 ──────────────────────
-     모바일에서는 버튼이 전폭 블록이 되어, 채움 버튼인 '후원하기'가
-     첫 화면에서 가장 큰 색 덩어리가 된다. QR로 처음 들어온 사람에게는
-     소개보다 모금이 먼저 오는 인상을 준다.
+  /* ── 히어로 첫 화면 ─────────────────────────────────
+     첫 화면에는 후원 CTA를 두지 않는다. 처음 방문한 사람에게
+     소개보다 모금이 먼저 오면 강권으로 읽히기 때문이다.
+     대신 '무엇을 하는가'와 '왜 시작했는가'로 가는 경로를 둔다.
+     후원 경로는 상단 네비게이션, 하단 CTA 섹션, 참여하기 메뉴에 있다. */
 
-     행동 경로는 그대로 두고 위계만 낮춘다.
-     - 순서: 더 알아보기 → 후원하기 (소스 순서는 유지, 표시만 교체)
-     - 채도: 후원하기를 테두리형으로 (채움 버튼은 하단 CTA 섹션에 유지)
-     데스크톱(577px 이상)에는 영향이 없다. */
-
-  .hero-actions,
+  /* 두 버튼 모두 안내 경로이므로 가로로 나란히 둔다.
+     세로로 쌓으면 132px를 차지해 히어로 일러스트가 첫 화면 밖으로 밀린다. */
   .hero-actions p {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 0.6rem;
     margin-bottom: 0;
   }
 
-  .hero-actions .btn-outline { order: 1; }
-  .hero-actions .btn-donate  { order: 2; }
-
-  .hero-actions .btn-donate {
-    background-color: transparent;
-    color: $warm-coral;
-    border: 1.5px solid $warm-coral;
-    box-shadow: none;
-
-    &:hover {
-      background-color: $warm-coral;
-      color: white;
-      box-shadow: none;
-      transform: none;
-    }
+  .hero-actions .btn-teal,
+  .hero-actions .btn-outline {
+    flex: 1;
+    margin: 0;
+    padding: 0.8rem 0.6rem;
+    font-size: 0.9rem;
+    white-space: nowrap;
   }
 
   .cta-title {
